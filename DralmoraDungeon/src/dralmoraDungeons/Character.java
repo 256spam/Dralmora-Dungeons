@@ -13,7 +13,7 @@ public class Character {
 		Health = 30;
 		Gold = 0;
 		Armor = 2;
-		Potions = 2;
+		Potions = 6;
 		lastX = 0;
 		lastY = 0;
 		lastZ = 0;
