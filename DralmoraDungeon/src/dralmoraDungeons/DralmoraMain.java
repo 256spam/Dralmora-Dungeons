@@ -179,7 +179,7 @@ public class DralmoraMain {
 				DungeonMap[x][y][z].setHasMimic(1);//creates a mimic object in the room
 				DungeonMap[x][y][z].setHasChest(0);//mimic overwrites a chest object, thus if a chest was generated it is replaced by the mimic.
 				DungeonMap[x][y][z].setHasMonster(0);//Mimic overwrites a monster so that no double-teaming occurs as that would be highly unfair.
-				//DungeonMap[x][y][z].changeMimic();
+				DungeonMap[x][y][z].changeMimic();
 			}
 			if (chance <= 0.25f){
 				if(DungeonMap[x][y][z].getHasMonster()==1){
@@ -320,9 +320,6 @@ public class DralmoraMain {
 		fileOut2.close();
 	}
 	public static void MainLoop() throws IOException{
-		//ThreadLocalRandom.current().nextInt(1, 10);
-		//DungeonMap[Character.getLastX()][Character.getLastY()][Character.getLastZ()]
-		//preformedEvents = preformedEvents + ("\n" +);
 		
 		boolean exitprogram = false;
 		boolean justEntered = true;

@@ -5,7 +5,7 @@ import java.util.Random;
 public class Room {
 	private Boolean Used, Cleared, isBoss, HasLadder;
 	private int HasMonster, HasChest, HasTrap, HasMimic, type;
-	private static Monster Enemy;
+	private Monster Enemy;
 	private String BossColor;
 	
 	public Room(){
